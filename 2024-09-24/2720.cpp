@@ -32,6 +32,40 @@ using namespace std;
         각 테스트케이스에 대해 필요한 쿼터의 개수, 다임의 개수, 니켈의 개수, 페니의 개수를 공백으로 구분하여 출력한다.
 
 */
+
+//* 일반적인 연산 문제.
 int main(){
+    // 동전의 가치를 100배하여 센트 단위로 정수로 정의
+    const int QUARTER = 25;  // 쿼터 (25센트)
+    const int DIME = 10;     // 다임 (10센트)
+    const int NICKEL = 5;    // 니켈 (5센트)
+    const int PENNY = 1;     // 페니 (1센트)
+
+    int t;
+    cin >> t;
+
+    while(t--){
+        int c;
+        cin >> c;
+
+        int q,w,e,r;
+
+        q = c / QUARTER;
+        c %= QUARTER;
+
+        w = c / DIME;
+        c %= DIME;
+
+        e = c / NICKEL;
+        c %= NICKEL;
+
+        r = c / PENNY;
+        c %= PENNY;
+
+        cout << q << " " << w << " " << e << " " << r << endl;
+
+    }
+
+
 
 }

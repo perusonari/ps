@@ -52,7 +52,7 @@
             "group": "test",
             "args": [
                 "/C",
-                "${fileDirname}\\${fileBasenameNoExtension}"
+                "${fileDirname}\\build\\${fileBasenameNoExtension}"
             ]
         },
         {
@@ -64,7 +64,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\build\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
