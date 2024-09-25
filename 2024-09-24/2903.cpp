@@ -44,6 +44,7 @@ int main(){
 
     cin >> n;
 
-    int point = pow(pow(2, n)+1, 2); // 그러나 double Type이 return 되기 때문에 
-    cout << point;
+    int point = pow(pow(2, n)+1, 2); // 오버플로우는 일어나지 않으나, double Type이 return 되기 때문에 출력에 문제가 있음. 신경쓸 것.
+    cout << point << endl;
+    cout << pow(2, 30)-1;
 }
